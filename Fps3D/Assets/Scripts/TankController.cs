@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class TankController : MonoBehaviour
 {
     
     public float rotateSpeed = 90;
