@@ -14,8 +14,9 @@ namespace TankShooter.Camera{
 
         void Update()
         {
-             CameraRotationFollow();
              CameraMovementFollow();
+           CameraRotationFollow();
+            
 
              if(Input.GetKeyDown(KeyCode.Space))
              {
@@ -28,13 +29,14 @@ namespace TankShooter.Camera{
         void CameraRotationFollow()
         {
                 _cameraTransform.rotation = Quaternion.Lerp(_cameraTransform.rotation,
-            Quaternion.LookRotation(_targetTransform.position - _cameraTransform.position),Time.deltaTime*_cameraSettings.LerpSpeed);
+            Quaternion.LookRotation(_targetTransform.forward),Time.deltaTime*_cameraSettings.LerpSpeed);
         }
 
         void CameraMovementFollow()
         {
+            Vector3 offset = (_cameraTransform.right * _cameraSettings.PositionOffSet.x)+(_cameraTransform.up*_cameraSettings.PositionOffSet.y)+(_cameraTransform.forward*_cameraSettings.PositionOffSet.z);
             _cameraTransform.position = Vector3 .Lerp(_cameraTransform.position,_targetTransform.position
-            + _cameraSettings.PositionOffSet,Time.deltaTime*_cameraSettings.PositionLerp);
+            + offset,Time.deltaTime*_cameraSettings.PositionLerp);
         }
 
 

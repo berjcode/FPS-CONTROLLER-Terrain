@@ -19,6 +19,9 @@ namespace TankShooter.PlayerInput {
 
            _rotationInputData.Horizontal = (Input.mousePosition.x - _lastMouseInput.x);
            _lastMouseInput = Input.mousePosition;
+
+            _inputData.ProcessInput();
+          
         }
     
     }

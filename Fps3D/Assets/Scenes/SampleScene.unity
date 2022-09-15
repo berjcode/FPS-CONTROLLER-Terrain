@@ -302,6 +302,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 864352808, guid: b5d023135bcb7f348bcb343326045412, type: 3}
+      propertyPath: _targetTransform
+      value: 
+      objectReference: {fileID: 1267108478}
+    - target: {fileID: 864352813, guid: b5d023135bcb7f348bcb343326045412, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 963194227, guid: b5d023135bcb7f348bcb343326045412, type: 3}
       propertyPath: field of view
       value: 60
@@ -358,5 +366,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 4593404214403643750, guid: b5d023135bcb7f348bcb343326045412, type: 3}
+      propertyPath: _targetTransform
+      value: 
+      objectReference: {fileID: 1080809397}
+    m_RemovedComponents:
+    - {fileID: 369377354, guid: b5d023135bcb7f348bcb343326045412, type: 3}
+    - {fileID: 963194226, guid: b5d023135bcb7f348bcb343326045412, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b5d023135bcb7f348bcb343326045412, type: 3}
+--- !u!4 &1080809397 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4164909682700640, guid: b5d023135bcb7f348bcb343326045412, type: 3}
+  m_PrefabInstance: {fileID: 864352798}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1267108469 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1498083748156456, guid: b5d023135bcb7f348bcb343326045412, type: 3}
+  m_PrefabInstance: {fileID: 864352798}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1267108478 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4094816930434154, guid: b5d023135bcb7f348bcb343326045412, type: 3}
+  m_PrefabInstance: {fileID: 864352798}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1267108479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267108469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c1d0b6f2494d7842bf52f3b139fc243, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationInput: {fileID: 11400000, guid: d16ec5d4b3898964ca3ea2a9a6c7c46f, type: 2}
+  _towerTransform: {fileID: 1080809397}
+  _towerRotationSettings: {fileID: 11400000, guid: 750b5e63b4fba2747a033b28250ebe6a, type: 2}
